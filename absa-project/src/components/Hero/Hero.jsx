@@ -7,7 +7,7 @@ import HeroCarousel from '../Hero/HeroCarousel'
 export default function Hero() {
   return (
     <>
-      <section>
+      <section className="overflow-x-hidden">
         <HeroCarousel>
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-[450px] relative m-auto xl:px-12 py-20">
             {/* info info */}

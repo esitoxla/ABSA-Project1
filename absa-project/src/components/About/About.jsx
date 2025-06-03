@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router';
 
 export default function About() {
   return (
@@ -25,10 +26,12 @@ export default function About() {
         </p>
       </div>
 
-      <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 cursor-pointer w-[170px] mt-4">
-        {" "}
-        <FaArrowRight /> Learn more
-      </button>
+      <Link to="/about">
+        <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 cursor-pointer w-[170px] mt-4">
+          {" "}
+          <FaArrowRight /> Learn more
+        </button>
+      </Link>
     </div>
   );
 }

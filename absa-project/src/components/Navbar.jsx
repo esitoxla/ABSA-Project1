@@ -1,42 +1,11 @@
 import React, { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import ResponsiveMenu from "./Navbar/ResponsiveMenu";
+import { NavLink , Link} from "react-router";
 
 export default function Navbar() {
   const [open, setOpen] = useState(true);
 
-  const navbarMenu = [
-    {
-      id: 1,
-      title: "Home",
-      link: "/",
-    },
-    {
-      id: 2,
-      title: "About us",
-      link: "#",
-    },
-    {
-      id: 3,
-      title: "Products",
-      link: "#",
-    },
-    {
-      id: 4,
-      title: "Testimonials",
-      link: "#",
-    },
-    {
-      id: 5,
-      title: "Gallery",
-      link: "#",
-    },
-    {
-      id: 6,
-      title: "Contact",
-      link: "#",
-    },
-  ];
 
   return (
     <>
@@ -45,17 +14,27 @@ export default function Navbar() {
           <div>Minana</div>
           <div className="hidden md:block">
             <ul className="flex items-center gap-6">
-              {navbarMenu.map((item) => (
-                <li key={item.id}>
-                  <a
-                    href={item.link}
-                    className="inline-block py-1 px-3 hover:text-red-600"
-                  >
-                    {" "}
-                    {item.title}
-                  </a>
+             
+                <li>
+                  <NavLink to="/">Home</NavLink>
                 </li>
-              ))}
+
+                <li>
+                  <Link to="/about">About us</Link>
+                </li>
+                <li>
+                  <Link to="/product">Products</Link>
+                </li>
+                <li>
+                  <Link to="/testimonials">Testimonials</Link>
+                </li>
+                <li>
+                  <Link to="/gallery">Gallery</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+              
             </ul>
           </div>
           {/* hamburgar */}
