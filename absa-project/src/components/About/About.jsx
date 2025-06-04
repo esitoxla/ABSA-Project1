@@ -4,9 +4,14 @@ import { Link } from 'react-router';
 
 export default function About() {
   return (
-    <div className="mx-8  my-16 px-16 leading-normal">
-      <h1 className="text-3xl">About us</h1>
-      <div className="flex flex-col gap-6 my-9 text-gray-700">
+    <div className="mx-8  my-16 lg:px-16 leading-normal ">
+      <div className="flex items-center justify-center mb-12">
+        <div className="flex-1 h-0.5 bg-red-500 max-w-xs"></div>
+        <h1 className="text-2xl md:text-4xl  text-red-600 uppercase px-8">About us</h1>
+        <div className="flex-1 h-0.5 bg-red-500 max-w-xs"></div>
+      </div>
+
+      <div className="flex flex-col gap-6 my-9 text-gray-700 ">
         <p>
           Minana Services, founded in 2014, is a palm oil production company
           engaged in cultivating oil palm and processing palm fruits into crude

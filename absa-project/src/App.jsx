@@ -4,6 +4,7 @@ import RootLayout from "./pages/RootLayout";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ProductPage from "./pages/ProductPage";
 
 const router = createBrowserRouter([
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         Component: AboutPage
+      },
+      {
+        path: "product",
+        Component: ProductPage
       }
     ]
   }
