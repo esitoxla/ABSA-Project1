@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductPage from "./pages/ProductPage";
+import Gallery from "./pages/Gallery";
+import Testimonials from "./pages/Testimonials";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
 
@@ -24,6 +27,18 @@ const router = createBrowserRouter([
       {
         path: "product",
         Component: ProductPage
+      },
+      {
+        path: "gallery",
+        Component: Gallery
+      },
+      {
+        path: "testimonial",
+        Component: Testimonials
+      },
+      {
+        path: "contact",
+        Component: Contact
       }
     ]
   }
