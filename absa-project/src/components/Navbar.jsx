@@ -33,7 +33,7 @@ export default function Navbar() {
               </li>
 
               <li>
-                <NavLink to="about">
+                <NavLink to="/about">
                   {({ isActive }) => (
                     <span
                       className={`relative ${isActive ? "text-red-500" : ""}`}
@@ -52,7 +52,7 @@ export default function Navbar() {
               </li>
 
               <li>
-                <NavLink to="product">
+                <NavLink to="/product">
                   {({ isActive }) => (
                     <span
                       className={`relative ${isActive ? "text-red-500" : ""}`}
@@ -71,7 +71,7 @@ export default function Navbar() {
               </li>
 
               <li>
-                <NavLink to="testimonial">
+                <NavLink to="/testimonial">
                   {({ isActive }) => (
                     <span
                       className={`relative ${isActive ? "text-red-500" : ""}`}
@@ -90,7 +90,7 @@ export default function Navbar() {
               </li>
 
               <li>
-                <NavLink to="gallery">
+                <NavLink to="/gallery">
                   {({ isActive }) => (
                     <span
                       className={`relative ${isActive ? "text-red-500" : ""}`}
@@ -109,7 +109,7 @@ export default function Navbar() {
               </li>
 
               <li>
-                <NavLink to="contact">
+                <NavLink to="/contact">
                   {({ isActive }) => (
                     <span
                       className={`relative ${isActive ? "text-red-500" : ""}`}
